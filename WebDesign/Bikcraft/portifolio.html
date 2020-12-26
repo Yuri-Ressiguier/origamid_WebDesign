@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/portifolio.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+		<script>document.documentElement.classList.add("js")</script>
 	</head>
 	<body>
 		<header class="header">
@@ -28,26 +29,39 @@
 
 		<section class="introducao-interna interna_portifolio">
 			<div class="container">
-                <h1>Portifólio</h1>
-                <p>conheça os projetos que amamos mostrar</p>
+                <h1 data-anime="400" class="fadeInDown">Portifólio</h1>
+                <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar</p>
 			</div>
 		</section>
 		<!--Fecha Intro-->
 
-        <section class="container">
+        <section class="container" data-slide="quote" data-anime="1200">
             <blockquote class="quote_cliente">
-                <p>"No mundo atual, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte"</p>
-                <cite>Barbara Moss</cite>
+                <p>"The way to get started is to quit talking and begin doing."</p>
+                <cite>Walt Disney</cite>
+			</blockquote>
+			<blockquote class="quote_cliente">
+                <p>"The greatest glory in living lies not in never falling, but in rising every time we fall." </p>
+                <cite>Nelson Mandela</cite>
+			</blockquote>
+			<blockquote class="quote_cliente">
+                <p>"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."</p>
+                <cite>Steve Jobs</cite>
             </blockquote>
 
         </section>
         <!--Fecha blockquote-->
 
 		<section class="portifolio">
-			<div class="container">
+			<div class="container" data-slide="portifolio">
 				<ul class="portifolio_lista">
 					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retro"></li>
 					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+					<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
+				</ul>
+				<ul class="portifolio_lista">
+					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retro"></li>
 					<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
 				</ul>
 			</div>
@@ -103,7 +117,10 @@
 			</div>
 
 		</footer>
-
+		<script src="./js/simple-anime.js"></script>
+		<script src="./js/simple-slide.js"></script>
+		<script src="./js/script.js"></script>
+		
 
 	</body>
 </html>
